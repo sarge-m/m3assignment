@@ -11,9 +11,10 @@ exports.getAllSales = function (req, res) {
 exports.getSalesByID = function( req, res){
  const {id} = req.params; // get id
  res.status(200).json({
- status: 'no implemented'
+ status: 'getSalesbyID not implemented'
  });
 }
+
 exports.createNewSales = function( req, res){ // must select the body to be raw->JSON in Postman
  const {body} = req;// req.body (attribute)
  const {id} = req.params;// get (attribute)

@@ -12,3 +12,5 @@ const sqlConfig = {
     }
    }
    module.exports = sqlConfig; 
+
+//console.log(process.env.NODE_ENV);

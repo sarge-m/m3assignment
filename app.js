@@ -17,9 +17,11 @@ app.use((req, res, next) => {
  console.log('Hello from the middleware 👋');
  next();
 });
+
+
 // 3) MIDDLE ROUTES loading
 const salesRouter = require('./routes/salesRoutes');
-const userRouter = require('./routes/userRoutes');
-app.use('/api/v1/sales', salesRouter);
+const userRouter = require('./routes/userRouter');
+app.use('/api/v1/sales', salesRouter); //inputting this in postman URL will redirect to salesRouter.js using GET method.
 app.use('/api/v1/users', userRouter);
 module.exports = app;
